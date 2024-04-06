@@ -209,7 +209,8 @@ class FEP_REST_API {
 		// $exclude[] = get_current_user_id();
 		$args = array(
 			'search'         => "*{$q}*",
-			'search_columns' => array( 'user_login', 'display_name' ),
+			#'search_columns' => array( 'user_login', 'display_name' ),
+			'search_columns' => array( 'display_name' ),
 			'exclude'        => $exclude,
 			'number'         => 10,
 			'orderby'        => 'display_name',
